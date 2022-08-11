@@ -1,3 +1,4 @@
+main();{
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -71,5 +72,5 @@ async function loadBooks() {
 async function saveBooks(books) {
     await Fs.writeFile(DB_PATH, JSON.stringify({ books }, null, 2))
 }
-
+}
 main()
